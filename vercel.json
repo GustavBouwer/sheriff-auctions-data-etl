@@ -1,16 +1,7 @@
 {
   "functions": {
-    "api/check-new-pdfs.py": {
-      "runtime": "python3.11",
-      "maxDuration": 30
-    },
-    "api/download-pdf.py": {
-      "runtime": "python3.11", 
-      "maxDuration": 60
-    },
-    "api/cron/hourly-check.py": {
-      "runtime": "python3.11",
-      "maxDuration": 30
+    "api/**.py": {
+      "runtime": "@vercel/python"
     }
   },
   "crons": [
