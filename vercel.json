@@ -1,0 +1,22 @@
+{
+  "functions": {
+    "api/check-new-pdfs.py": {
+      "runtime": "python3.11",
+      "maxDuration": 60
+    },
+    "api/process-pdf.py": {
+      "runtime": "python3.11", 
+      "maxDuration": 300
+    },
+    "api/cron/hourly-check.py": {
+      "runtime": "python3.11",
+      "maxDuration": 60
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/cron/hourly-check",
+      "schedule": "0 * * * *"
+    }
+  ]
+}
